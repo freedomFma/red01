@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head>
+      <title>guangmi</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="第一部分-当前ai创业公司发展的大方向">第一部分 当前AI创业公司发展的大方向 </h1>
+<p>openai会倒闭还是会再创神话？未来AI创业公司的核心竞争战略是什么？未来的产品形态是什么？</p>
+<h2 id="1-人工智能的基础石油燃料数据">1、人工智能的基础石油燃料——数据 </h2>
+<p>人工智能自20世纪40年代就诞生了，在推动人工智能发展的进展中有很多不同的方法论，目前发展最迅速的产生了最“成功”效果的和最热门的核心是神经网络的方法，这种方法背后是联结主义。<strong>（这一块的内容也很多，就是人工智能发展到今天其实有很多不同的方法和流派，这个可以梳理一下。）</strong></p>
+<p>目前的chatGPT等人工智能大语言模型（LLM large Language Model）都是基于神经网络的深度学习系统，这类学习算法依赖大量【标注好】的数据。（比如，硅谷有专门的标注数据公司，是人工智能时代的“发展动力”燃料，openAI的钱一部分给英伟达这样的芯片算力公司，还有一部分钱给了数据标注公司。数据标注是一件非常简单但是很耗时耗力的工作，比如我们现在的图形验证码就是一次数据标注，我们指出图片中的“狗”来进行登录验证实质上就是免费当了一次数据标注工人）。</p>
+<p>深度学习算法的本质是收集大量的数据（正确答案）喂给模型，模型会自己学习现有的数据和现成的答案，然后再给它没有见过的数据，他会预测出答案。<br>
+（比如，2015年的ImageNet的逻辑就是收集了1400万张的图片，并且手动标注了每张图片的内容，这个过程称为建立数据库。将数据本身和数据对应标注的内容投喂给模型，模型在算法下会反复大量的学习数据和标注之间的关系。模型在算法的设定下，自己就学会了什么是“猫”什么是“狗”，当我们再给模型一张它没有见过的“狗”的图片，他能预测和判断出这是“狗”。这是一个非常简单的例子。）<br>
+预训练模型更往前走了一步，他不需要人工标注特征，而只是投喂数据，模型会自己学习特征，并在学习特征的基础上进行预测学习。<br>
+这样的模型逻辑意味着【如果有一个非常大的数据集】并且【你训练了一个非常大的神经网络】，那么模型就会展现出“人工智能”的样子。</p>
+<p>这就是预训练的时代，这就是所有进步的驱动力，我们今天看到的所有进步，超大神经网络，在巨大的数据集上训练的超大神经网络。<br>
+Ilya（OpenAI三大创始人之一，技术好，学术能力强，在硅谷声评很好）他在人工智能顶会NeurIPS 2024认为预训练将结束，数据压榨到头了。计算机通过更好的硬件、更好的算法和逻辑集群不断增长，所有这些事情都在不断增加你的计算能力，而数据没有增长，因为我们只有一个互联网。<br>
+数据是 AI 的化石燃料。它就像是以某种方式创建的，现在我们使用它，我们已经实现了数据的最大化利用，不能再更好了。我们想办法必须处理现在拥有的数据。我仍然会努力，这仍然让我们走得很远，但问题在于，只有一个互联网。</p>
+<h2 id="2-ilya的看法就是预训练时代到头了因为没有数据了也被称为scaling-laws撞墙">2、Ilya的看法就是：预训练时代到头了，因为没有数据了，也被称为Scaling Laws撞墙。 </h2>
+<p>（这是202412月份的Ilya在顶会上NeurIPS刚刚发表的演讲，引发了网络的很多讨论，这是AI届的热点事件！事关AI未来发展的方向，由此关联到创业公司的方向。）<br>
+这里其实有很多不同的看法，有的人认为还没有到头，比如有人认为因为还可以寻找更多高质量的数据，而不只是互联网和交涉媒体的数据；比如，有人认为可以用合成数据（也就是现在的数据让AI过一遍，然后再用AI过滤过的数据重新训练）。也有人认为Ilya的观点是对的。……</p>
+<p>他在演讲中给出了未来AI发展的可能性和方向：</p>
+<ul>
+<li>Agent智能代理。
+<ul>
+<li>（所谓的智能代理就是像职业工人一样：有专门写文稿的、有专门的应用开发的、专门包装设计的，所有单独的特定的工作 都是一个“Agent”，很多个Agent一起形成一家具备服务性质的企业。或者像细胞中的特定的结构一样：叶绿体负责太阳能，线粒体负责管理消耗能量，高尔基体运输氨基酸……就是每个结构有每个结构的功能，他们合起来就变成具有生命的细胞了。或者智能汽车，有摄像头作为收集和感知agent，有分析推理agent，也有路线规划agent，所有的agent合力保证无人驾驶成为可能。）</li>
+<li>（与Agent相对的一个概念就是AGI通用人工智能——期望一个能够做一切事情的【通用的】人工智能出现，23年24年初的创业公司的大方向就是在大语言模型的基础上探索通用人工智能，到了25年的今天，没有探索成功。但是未来仍然可能出现，很多创业者都大概预计了AGI实现的时间，有的认为5年，有的认为10年，有的认为50年。）</li>
+<li>（目前的LLM也就是大语言模型，还是问答的模式，创业者们也在探索新的产品形式和新的商业模式的出现。）</li>
+<li>（目前2025年AI发展的道路和创业公司的发力点，就在于Agent，不只是Ilya预测，国内的很多创业人和技术媒体都预测25年是Agent年，都在期待能出什么新的产品。）</li>
+<li>（比如我们打通我们的工作流程之后，可以加入特定的智能体来做专门的任务。）</li>
+</ul>
+</li>
+<li>Reasons推理<br>
+（这是跟神经网络不同的另一个方法论。神经网络其实主要是预测，是基于概率统计的，因此推理能力差。）</li>
+<li>Understands可解释性<br>
+（神经网络，其实算法就是提供了基础，在算法基础上模型自身学习数据的特征学习预测。因此，对于模型内部究竟发生了什么？为什么能够预测准确，目前是不可解释的，也就是说神经网络目前还是一个黑箱。）</li>
+<li>Is self aware自我意识<br>
+人工智能是否会发展出自我意识。<br>
+（哥哥可以看看是否有价值整理这个演讲）</li>
+</ul>
+<h2 id="3-第一个问题硬正是在这样的背景之下张小珺提出这个问题openai挖矿到头会倒闭-or-会创造神话">3、第一个问题（硬）正是在这样的背景之下，张小珺提出这个问题：openai挖矿到头会倒闭 or 会创造神话？ </h2>
+<p>关于&nbsp;OpenAI&nbsp;，我听到过两种说法：一种说法是，他们是一个期货公司，随着预训练&nbsp;scaling law&nbsp;的金矿挖完，他们的领先技术也到头了；另一种说法是，不能低估&nbsp;OpenAI&nbsp;的实力，它是一个了不起的公司，还藏了很多牌。你怎么看这家公司？过去6&nbsp;个月认知有没有发生过变化？</p>
+<ul>
+<li>（因为Ilya说互联网数据用完了，scaling law&nbsp;撞墙了，燃料没了，因此openai的“数据”金矿也就挖完了，技术到头了，是一个期货公司。</li>
+<li>另一个说法就是不能低估&nbsp;OpenAI&nbsp;的实力，它是一个了不起的公司，还藏了很多牌。）</li>
+</ul>
+<p>广密的观点：</p>
+<ul>
+<li>openai仍然是当下最明星的产品公司。体现在数据中：
+<ul>
+<li>ChatGPT&nbsp;官方公布的&nbsp;WAU&nbsp;周活已经过&nbsp;3&nbsp;亿了，对应&nbsp;5-6&nbsp;亿的月活，明年这个时候可能&nbsp;10&nbsp;多亿月活，这个增速是全球所有科技产品当中，历史最快的，还超过了&nbsp;TikTok&nbsp;之前的增速。TikTok&nbsp;大概用了4-5&nbsp;年时间做到&nbsp;5&nbsp;亿多月活。</li>
+</ul>
+</li>
+<li>openai究竟能不能继续“创造神话”，其实跟当前的AI创业公司面对一样的问题，需要在下一步的竞争中得到答案：
+<ul>
+<li>最本质的问题和认知变化最大的是 “下一个Google” ，ChatGPT&nbsp;是在往下一个&nbsp;Google&nbsp;方向走，无论&nbsp;Anthropic、xAI、Perplexity，甚至国内的豆包、Kimi，还是做&nbsp;coding&nbsp;的&nbsp;Cursor、Devin，虽然大家形态有差异，从不同的路径发散，最后都是殊途同归，收敛在下一个&nbsp;Google&nbsp;的叙事下。</li>
+<li>AI&nbsp;公司的对手和目标并不只是&nbsp;ChatGPT，而是如何&nbsp;beat Google，这是最大的牌。我也不觉得&nbsp;OpenAI&nbsp;会刻意藏什么牌，下一个&nbsp;Google&nbsp;就是一张明牌，比拼资金、GPU、人才、产品、品牌的综合能力。</li>
+</ul>
+</li>
+</ul>
+<h2 id="4-第二个问题硬基座大模型和基于基座大模型的这一波产品他们到底在争夺着什么">4、第二个问题（硬）基座大模型和基于基座大模型的这一波产品，他们到底在争夺着什么？ </h2>
+<ul>
+<li>（整个2024年就是创业公司发展基座大模型的一年，比如字节推出的豆包产品、月之暗面推出kimi产品、阿里推出通义千问产品、……）</li>
+<li>所以这个问题是在问这些大模型产品公司，下一步怎么走？难道只是做目前的问答这样的产品吗？他们下一步的整体规划战略是往哪走？</li>
+</ul>
+<p>广密的观点：他们的核心战略是争夺下一个&nbsp;Google。如何理解下一个&nbsp;Google：</p>
+<ul>
+<li>信息分发的主线演变过程：门户网站到关键词搜索到推荐分发，人们获取信息的方式一直在发生改变，因此关注在人工智能的助力下，在chatGPT这样的产品下，未来的信息分发应该是什么样的？
+<ul>
+<li>（门户网站。信息像报纸一样整合在一个页面中）最早，是雅虎的门户模式：人工编辑、&nbsp;listing，最小单元是网页。门户模式只能&nbsp;listing&nbsp;头部的网页，所以非常有限。后来，出现了&nbsp;Google index&nbsp;，网页用关键词搜索的模式，重新组织了信息分发。</li>
+<li>（关键词搜索。人们在门户网站寻找自己想看的信息需要花很长的时间，甚至找不到。）红杉美国最早投了雅虎，后来投了Google。Mike Morris&nbsp;当时有一次分享提到，最早希望&nbsp;Google&nbsp;能帮雅虎更好覆盖长尾网页的内容，因为长尾的内容是只能通过关键词模式被启动触发的，这就需要对整个互联网做index。这里很有意思的是，做门户的人当时都觉得&nbsp;Google&nbsp;这种关键词搜索是做不大的，但&nbsp;Google&nbsp;也是从雅虎的边缘市场做起来的。一定要重视边缘市场起来的公司，往往伟大公司都是从边缘市场做起来的。</li>
+<li>（信息推荐。现在短视频 淘宝什么的，都在猜我们想看啥 想买啥，我们都不需要关键词搜索，他就主动猜我们想要啥。信息分发不需要人们主动了，信息主动找人。）顺着信息分发往下讲，信息分发中间有一个演变叫推荐引擎，根据用户的行为做投票。其实，人是变得更被动了一些，AI更主动做推荐，最小单元从网页变成了内容。<br>
+字节也一直在超越Google&nbsp;的路上。这两年开始了搜索和推荐融合的一体化，从小红书这个产品能看到一些影子。小红书非常有意思，包含了社区、信息流推荐、短视频、图文、多模态，目前已经高质量的搜索引擎，这个融合了搜索推荐问答的形态，未来做任务一体化会更有意思。</li>
+<li>（未来的信息分发应该具有什么样的面貌？）今天的大模型，最小单元比网页更小，最小化的原子是token。Token&nbsp;背后是人类几千年抽象的智能，因此，<strong>大模型是重新组织了智能，未来会以&nbsp;agent&nbsp;或做任务的形态输出。</strong> 最后会是一个任务引擎，完成&nbsp;Task Automation。 <strong>未来，&nbsp;ChatGPT&nbsp;融合了搜索、推荐、问答、做任务等等功能，而不只是目前的形态。过去几十年，互联网把零售和线下的东西搬到了线上，未来，人类更多的工作流和任务会走向最佳实践进行自动化。</strong></li>
+</ul>
+</li>
+<li>产品形态：做了大模型的公司要做到创新新的信息分发模式，会直接体现在产品的形态上。未来的产品形态的思考：
+<ul>
+<li>目前ChatGPT&nbsp;形态太初级，未来一定是融合性的产品，模型也会更主动，像一个助理。模型也可以在后台一直长时间思考，比如几小时、几天，甚至更长。人类目前学会东西后，会实时更新了自己大脑，模型后面学到人类的新知识，也可以实时更新到自己的神经网络里面。此外，模型的学习效率有可能比人还要高。</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-第三个问题水-软">5、第三个问题（水、软） </h2>
+<p>你刚才说未来会以&nbsp;agent&nbsp;或做任务的形态输出，我目前还在想，要是有一个会做饭的机器人就好了，它可以通过预训练学会各种各样的菜谱，做做饭的任务。你觉得它能做到吗？</p>
+<p>广密的观点：<br>
+是能做到的。但厨师的最佳实践是没法被传承的。如果AI&nbsp;的学习效率变得很高，它能把顶级大厨的手艺学回来，那最佳实践就被抽象成了算法，大厨的&nbsp;task automation&nbsp;就完成了。但前提是要有反馈，什么样的菜做出来比较好吃？这是一个奖励模型。这个奖励模型还是一个封闭系统，是相对好给出的，但是难在机器人难做。</p>
+<h2 id="6-第四个问题硬ai创业公司的产品很不一样为什么也是在争夺下一个google">6、第四个问题（硬）ai创业公司的产品很不一样，为什么也是在争夺下一个google？ </h2>
+<p>除了提到&nbsp;OpenAI，还提到另外两家公司，一个是&nbsp;Anthropic，一个是&nbsp;Perplexity。它们目前长得和&nbsp;OpenAI、和&nbsp;ChatGPT&nbsp;是很不一样的，但他们也都在争夺下一个&nbsp;Google&nbsp;这张牌吗？</p>
+<ul>
+<li>（Anthropic和Perplexity都是初创公司，并且是当下的明星公司。
+<ul>
+<li>Anthropic他们的产品是Claude。 Claude 3.5 Sonnet 模型和 Claude 3.5 Haiku 新模型的突破性功能：Computer Use（计算机使用），允许 Claude 像人类用户一样与计算机交互：移动光标和单击按钮、键入文本和执行按键、截取和分析屏幕截图和编辑文本文件等。Computer Use 可以让 Claude 3.5 Sonnet 将自然语言指令转换为计算机命令的 API， 以实现 Powerful AI 的关键定义之一：通过具体的界面，自主完成长期任务，它被视作 AI Agent 实践的重要突破。</li>
+<li>Perplexity他们的产品特点是提供了信息检索的确定性。比如，它会在所生成内容的某些关键信息后面添加数字小标，然后像论文格式那样列出信息来源。像Perplexity这种产品在市面上被称为「AI搜索」，因为它在回答问题之前其实先去搜索引擎上搜索了一圈相关信息，然后才归纳总结并回复用户。不过，Perplexity创始人兼CEO更愿意称之为「答案引擎」（Answer Engine）。）<br>
+（咱们是不是可以做一期专门讲解目前比较热门的ai创业公司以及公司推出的产品的介绍。）</li>
+</ul>
+</li>
+</ul>
+<p>广密的观点：<br>
+是的，大家都在计算架构和信息分发这条主线下，都是同一个技术杠杆，因此都是殊途同归的。虽然形态和商业策略肯定有差异，但&nbsp;OpenAI&nbsp;正在把自己变成一个&nbsp;killer app，也是目前唯一的&nbsp;killer app，在&nbsp;C&nbsp;端一骑绝尘。<br>
+但&nbsp;Anthropic&nbsp;正在走向一个&nbsp;AI&nbsp;时代的&nbsp;OS&nbsp;操作系统的路径，站住了&nbsp;coding、协议，尤其是最近发布&nbsp;MCP&nbsp;的&nbsp;context。&nbsp;&nbsp;<br>
+Perplexity最大的创新是重新定义了&nbsp;AI&nbsp;搜索形态，其实是&nbsp;AI&nbsp;在帮用户使用搜索引擎，&nbsp;Perplexity&nbsp;其实是一个&nbsp;agent，用户可以围绕一个主题一直追问、互动。互动是很关键的，&nbsp;AI&nbsp;可以和整个互联网网页互动了，而不只是一个静态的网页和内容的输出。<strong>产品层面，最终大家都会变成任务引擎，或任务容器。这个任务引擎是我逻辑中下一个&nbsp;Google&nbsp;的幻想。</strong></p>
+<h2 id="7-接着第四个问题-对产品形态的构想硬">7、接着第四个问题 对产品形态的构想。（硬） </h2>
+<p>任务容器和任务引擎是一个概念吗？以前大家会叫内容容器，今天是用任务来替换内容？</p>
+<p>广密的观点：</p>
+<ul>
+<li>还是一个概念，主要是因为目前还不好去定义它的具体形态。</li>
+<li>其实<strong>今日头条</strong> 就是一个内容容器，<strong>微信</strong>也是一个内容容器，它们也都是一个浏览器。未来&nbsp;AI&nbsp;最大的趋势是做任务、完成任务，尤其是有经济价值的任务。</li>
+<li><strong>以前生成的最大的是内容，未来AI&nbsp;生成最大的是任务、agent、工作流。</strong> 比如，我目前研究二级公司的股票，我怎么去寻找信息、处理信息，怎么去沟通、拆解？AI&nbsp;可以帮我&nbsp;automate&nbsp;出来一个投研的&nbsp;workflow，而不是几十个人在帮我开发&nbsp;workflow，这就是我的一个投研的&nbsp;workflow agent。</li>
+</ul>
+<h2 id="8-第五个问题中等争夺下一个-google一定是需要自己自研基座大模型吗有可能在别人的模型上盖房子吗">8、第五个问题（中等）争夺下一个&nbsp;Google，一定是需要自己自研基座大模型吗？有可能在别人的模型上盖房子吗？ </h2>
+<p>广密观点：</p>
+<ul>
+<li>我更相信端到端、full stack&nbsp;策略的胜算更大，当然这样的要求，投入的资源也很大。即便看Perplexity&nbsp;现在发展很好，它其实很难向下大幅改动模型，或搜索的&nbsp;index。但&nbsp;Google&nbsp;的端到端优化能力是很强的，可以向下改&nbsp;TPU，改&nbsp;Transformer。</li>
+<li>端到端优化是非常重要的，Apple、Tesla、微软都是端到端Full Stack&nbsp;的公司，微软从&nbsp;OS&nbsp;向上做了&nbsp;office&nbsp;这些&nbsp;killer app&nbsp;。但这也不代表&nbsp;OS&nbsp;公司一定能做好&nbsp;killer app，微软也没有做好浏览器或者搜索这两个&nbsp;killer app，这个问题其实不绝对，存在即合理。</li>
+<li>（❗️我不太理解端到端是什么意思❗️广密的观点是有自己的基座大模型一定能走的更远。没太理解他的具体的意思。）</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
